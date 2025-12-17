@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Certificate Download</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <img src="logo.png" alt="Company Logo" class="logo" />
+    <div class="company-details">
+      <h1>Your Company Name</h1>
+      <p>Test Certificate Download Portal</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="controls">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search product code or name"
+      />
+
+      <select id="typeFilter">
+        <option value="">All Products</option>
+        <option value="Hybrid">Hybrid</option>
+        <option value="PP">PP</option>
+        <option value="Speciality">Speciality</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Product Name</th>
+          <th>Colour</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody id="productTable"></tbody>
+    </table>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Your Company Name</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
 
