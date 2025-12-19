@@ -126,10 +126,10 @@ td {
 }
 
 /* MOBILE CARD VIEW */
-@media (max-width: 700px) {
+@media (max-width: 360px) {
 
   .container {
-    padding: 12px;
+    padding: 6px;
   }
 
   table thead {
@@ -161,7 +161,7 @@ td {
   td:before {
     content: attr(data-label);
     display: block;
-    font-weight: 700;
+    font-weight: 300;
     margin-bottom: 2px;
     color: #444;
   }
@@ -173,6 +173,6 @@ td {
     margin-top: 6px;
     text-align: center;
     padding: 10px;
-    font-size: 13px;
+    font-size: 11px;
   }
 }
