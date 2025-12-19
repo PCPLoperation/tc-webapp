@@ -30,5 +30,84 @@
     <header class="hero">
       <div class="hero-overlay">
 
-        <!-- Company Logo
+        <!-- Company Logo -->
+        <!-- Replace logo.png if needed -->
+        <img class="hero-logo" src="logo.png" alt="Company Logo">
 
+        <!-- Page Title -->
+        <h1 class="hero-title">
+          TEST CERTIFICATE DOWNLOAD
+        </h1>
+
+      </div>
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN SECTION
+         Search bar + results box
+         Width/height controlled in CSS
+    ====================================================== -->
+    <section class="tc-section">
+
+      <!-- ===============================
+           SEARCH BAR
+           Filters while typing (JS)
+           Height controlled: --search-height
+      ================================ -->
+      <input 
+        id="search" 
+        type="text" 
+        placeholder="Search the product code"
+      >
+
+
+      <!-- ===============================
+           RESULTS AREA BACKGROUND BOX
+           Automatically grows with results
+           Color in CSS: --background-soft
+      ================================ -->
+      <div class="results-area">
+
+        <!-- ===============================
+             DESKTOP TABLE VIEW
+             MOBILE automatically converts
+             to card layout via CSS media queries
+        ================================ -->
+
+        <table>
+
+          <!-- ========= TABLE HEADERS (Desktop Only) ========= -->
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Colour</th>
+              <th>Download</th>
+            </tr>
+          </thead>
+
+          <!-- ========= TABLE BODY
+               JS will inject product rows here
+               ID required for JS
+          ========= -->
+          <tbody id="products-table-body"></tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </div> <!-- End container -->
+
+
+  <!-- =====================================================
+       JAVASCRIPT FILE
+       Handles: loading JSON, search filter, rendering
+  ====================================================== -->
+  <script src="app.js"></script>
+
+</body>
+</html>
