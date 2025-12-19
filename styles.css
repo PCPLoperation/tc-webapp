@@ -5,23 +5,14 @@
 }
 
 @font-face {
-  font-family: 'BankGothic';
+  font-family: BankGothic;
   src: url('BankGothicBT-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'BankGothic', Arial, Helvetica, sans-serif;
-}
-
-body {
-  font-family: 'BankGothic', Arial, Helvetica, sans-serif;
-}
-
-
-body {
-  font-family: 'BankGothic', Arial, Helvetica, sans-serif;
+  font-family: BankGothic, Helvetica, sans-serif;
 }
 
 
