@@ -1,171 +1,170 @@
-products.json
 [
   {
     "code": "51404",
     "name": "PU RAL 9016 GLOSSY",
-    "type": "",
+    "type": "PU",
     "colour": "White",
-    "pdf": "PU"
+    "pdf": "https://drive.google.com/uc?export=download&id=1uGI35_1B7k3WCw-68e1hS4PBEAFapl3L"
   },
   {
     "code": "59101",
     "name": "PP RAL 9005 SATIN BLACK",
-    "type": "",
+    "type": "PP",
     "colour": "Black",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=16xeNAgg80MVcwY7uxeu3IGjlMonaO1qj"
   },
   {
     "code": "59106",
     "name": "PP BLACK MATT",
-    "type": "",
+    "type": "PP",
     "colour": "Blacks",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1NOsP-JZzx2VQ3_9ln8q8CiX5-lZzmFjR"
   },
   {
     "code": "59111",
     "name": "PP BLACK GLOSSY",
-    "type": "",
+    "type": "PP",
     "colour": "Black",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1PSdydTYGspWYcEgAEbeTCHWQoFnkR9Lk"
   },
   {
     "code": "59112",
     "name": "PP METALLIC BLACK TEXTURE",
-    "type": "",
+    "type": "PP",
     "colour": "Black",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1ZxIWUhLDFfYYj1azS-B4XPHITQCFWw_S"
   },
   {
     "code": "59116",
     "name": "PP BLACK TEXTURE",
-    "type": "",
+    "type": "PP",
     "colour": "Black",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1fEJOCVEdUEXLhHX-tHoZvrO0J1ZyEqnj"
   },
   {
     "code": "59201",
     "name": "PP BCB SATIN (RAL 8019)",
-    "type": "",
+    "type": "PP",
     "colour": "Brown",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1NjjcYsbRLCLfhrfZ_SiKIgduxvYA-48X"
   },
   {
     "code": "59211",
     "name": "PP RAL 8025 SATIN",
-    "type": "",
+    "type": "PP",
     "colour": "Brown",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1kynsYN-5j62Wcipd3QpADBzTMZQfOInL"
   },
   {
     "code": "59212",
     "name": "PP RAL 8007 SATIN",
-    "type": "",
+    "type": "PP",
     "colour": "Brown",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1cXEG9-cMczNtPIQHv1_N8CrTdM2V8CxZ"
   },
   {
     "code": "59214",
     "name": "PP RAL 8011 SATIN",
-    "type": "",
+    "type": "PP",
     "colour": "Brown",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1u-9kHcGPnoZXvSGbHk3QP170mxyFsKUS"
   },
   {
     "code": "59218",
     "name": "PP RAL 8028 SATIN",
-    "type": "",
+    "type": "PP",
     "colour": "Brown",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1Cxjsk0vNoBJ4Sl0lYg_Yq4YJtY8H1Qkf"
   },
   {
     "code": "59219",
     "name": "PP NUT BROWN TEXTURE",
-    "type": "",
+    "type": "PP",
     "colour": "Brown",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1XbKOdWGgyD7gbnPUBgKq2dBqw2yrUhdL"
   },
   {
     "code": "59220",
     "name": "PP METALLIC COPPER",
-    "type": "",
+    "type": "PP",
     "colour": "Copper",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1jgbHdvvmDoMB7O8lDV01H7aJVs9qqLkz"
   },
   {
     "code": "59300",
     "name": "PP RAL 7047 SATIN",
-    "type": "",
+    "type": "PP",
     "colour": "Grey",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1slBLQaLGsMkH9GHu3UmRq-Z7nBLHAuty"
   },
   {
     "code": "59302",
     "name": "PP RAL 7024 GRAPHITE GREY S/G",
-    "type": "",
+    "type": "PP",
     "colour": "Grey",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1SIvtBpVnHaSbi6NXK21_pnwQ_CYxFYFi"
   },
   {
     "code": "59303",
     "name": "PP RAL 7037 GREY SATIN",
-    "type": "",
+    "type": "PP",
     "colour": "Grey",
-    "pdf": "PP"
+    "pdf": "https://drive.google.com/uc?export=download&id=1jEJIcOKlRBmrJBJl6DMANa4PIqVpglUm"
   },
   {
     "code": "55103",
     "name": "SUPER BLACK GLOSSY",
-    "type": "",
+    "type": "Hybrid",
     "colour": "Black",
-    "pdf": "Hybrid"
+    "pdf": "https://drive.google.com/uc?export=download&id=1hkkO7xTEgMF237FlkgES0kVlUacZRjBQ"
   },
   {
     "code": "55104",
     "name": "JET BLACK GLOSSY (RAL 9005)",
-    "type": "",
+    "type": "Hybrid",
     "colour": "Black",
-    "pdf": "Hybrid"
+    "pdf": "https://drive.google.com/uc?export=download&id=1pzorke5tbZLSaKtOn5Y2oLuFNO8lp5Aw"
   },
   {
     "code": "55205",
     "name": "BCB GLOSSY",
-    "type": "",
+    "type": "Hybrid",
     "colour": "Brown",
-    "pdf": "Hybrid"
+    "pdf": "https://drive.google.com/uc?export=download&id=1aMl-VkkfZ7i_b834xhkWQz_mf_hJzGLO"
   },
   {
     "code": "55206",
     "name": "NUT BROWN GLOSSY",
-    "type": "",
+    "type": "Hybrid",
     "colour": "Brown",
-    "pdf": "Hybrid"
+    "pdf": "https://drive.google.com/uc?export=download&id=1L5MUHHsXcTngQ-D4pxo-WbafaPmxhkDW"
   },
   {
     "code": "55208",
     "name": "WOOD BROWN GLOSSY",
-    "type": "",
+    "type": "Hybrid",
     "colour": "Brown",
-    "pdf": "Hybrid"
+    "pdf": "https://drive.google.com/uc?export=download&id=1mA74RK6pCtNT51mJKIFYAwn7XXx3Pi_k"
   },
   {
     "code": "55209",
     "name": "GOLDEN BROWN GLOSSY",
-    "type": "",
+    "type": "Hybrid",
     "colour": "Brown",
-    "pdf": "Hybrid"
+    "pdf": "https://drive.google.com/uc?export=download&id=1he-8GFvLaOe8CrKQ4SfGzmaGnjUDcDuF"
   },
   {
     "code": "55212",
     "name": "TEAK WOOD BROWN GLOSSY",
-    "type": "",
+    "type": "Hybrid",
     "colour": "Brown",
-    "pdf": "Hybrid"
+    "pdf": "https://drive.google.com/uc?export=download&id=1XyjS5A_EkdoA3eT5bXIyFuCknzs1KZbb"
   },
   {
     "code": "55300",
     "name": "SIEMEN'S GREY GLOSSY",
-    "type": "",
+    "type": "Hybrid",
     "colour": "Grey",
-    "pdf": "Hybrid"
+    "pdf": "https://drive.google.com/uc?export=download&id=17XNx3oN4uNvGW8KCOMP5GueH2_rGZ9Xf"
   }
 ]
