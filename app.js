@@ -1,6 +1,6 @@
 let products = [];
 
-fetch("https://drive.google.com/uc?id=1Zuy6uAIjeAwqlQUhlJKoVm5HYqOXC8lI&export=media")
+fetch("products.json")
   .then(response => response.json())
   .then(data => {
     products = data;
