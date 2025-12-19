@@ -166,5 +166,49 @@ table {
   min-width: 650px;
 }
 
+@media (max-width: 600px) {
+
+  table thead {
+    display: none;
+  }
+
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    background: #ffffff;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  td {
+    border: none;
+    padding: 6px 4px;
+    font-size: 13px;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #555;
+    display: block;
+  }
+
+  .download-btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
 
 
