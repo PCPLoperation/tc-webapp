@@ -3,8 +3,8 @@
 ====================================================== */
 :root {
   /* Layout Size */
-  --page-width-desktop: 100%;
-  --page-width-mobile: 100%;
+  --page-width-desktop: 1920px;
+  --page-width-mobile: 480px;
 
   /* Spacing */
   --section-padding: 24px;
@@ -13,7 +13,7 @@
   /* Sizes */
   --header-height: 110px;
   --search-height: 44px;
-  --search-width: 80%
+  --search-width: 800px;
   --row-height: 48px;
 
   /* Styling */
@@ -52,7 +52,7 @@ body {
    HEADER (Top Bar)
 ====================================================== */
 .hero {
-  width: 100%;
+  width: 1920px;
   height: var(--header-height);
   background: linear-gradient(90deg, #fff7e6, #ffa300);
   display: flex;
@@ -60,13 +60,14 @@ body {
 }
 
 .hero-overlay {
-  width: 100%;
+  width: 1920px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .hero-logo {
+   margin-left: 20px;
   height: 55px;
 }
 
@@ -84,11 +85,11 @@ body {
 }
 
 #search {
-  width: 80%;
+  width: 800px;
   height: var(--search-height);
   border-radius: 30px;
   border: 2px solid var(--brand-primary);
-  padding: 0 18px;
+  padding: 18px;
   font-size: 14px;
 }
 
