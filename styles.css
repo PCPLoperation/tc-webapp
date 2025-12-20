@@ -3,7 +3,7 @@
 ====================================================== */
 :root {
   /* Layout Size */
-  --page-width-desktop: 1920px;
+  --page-width-desktop: 100%;
   --page-width-mobile: 480px;
 
   /* Spacing */
@@ -60,7 +60,7 @@ body {
 }
 
 .hero-overlay {
-  width: 1920px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
