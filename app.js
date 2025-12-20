@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("products.json")
     .then(res => res.json())
     .then(data => {
-      window.products = data;
-      renderTable(data);
+    window.products = data;
+    renderTable([]);   // start empty
     })
     .catch(() => alert("Failed to load product list"));
 
@@ -30,24 +30,30 @@ document.addEventListener("DOMContentLoaded", () => {
       tableBody.appendChild(row);
     });
   }
+function applyFilters() {
+  if (!window.products) return;
 
-  function applyFilters() {
-    let filtered = window.products || [];
+  const text = searchBox.value.toLowerCase();
+  const type = typeFilter.value;
 
-    const text = searchBox.value.toLowerCase();
-    const type = typeFilter.value;
-
-    filtered = filtered.filter(p =>
-      (p.code?.toLowerCase().includes(text) ||
-       p.name?.toLowerCase().includes(text))
-    );
-
-    if (type)
-      filtered = filtered.filter(p => p.type === type);
-
-    renderTable(filtered);
+  // If nothing selected or typed → show nothing
+  if (!text && !type) {
+    renderTable([]);
+    return;
   }
 
+  let filtered = window.products;
+
+  filtered = filtered.filter(p =>
+    (p.code?.toLowerCase().includes(text) ||
+     p.name?.toLowerCase().includes(text))
+  );
+
+  if (type)
+    filtered = filtered.filter(p => p.type === type);
+
+  renderTable(filtered);
+}
   searchBox.addEventListener("input", applyFilters);
   typeFilter.addEventListener("change", applyFilters);
 
