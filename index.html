@@ -1,113 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Setup -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Page Title -->
-  <title>Test Certificate</title>
-
-  <!-- Stylesheet -->
+  <title>PCPL Test Certificate Download</title>
   <link rel="stylesheet" href="styles.css">
-
 </head>
+
 <body>
 
-  <!-- =====================================================
-       MAIN PAGE CONTAINER (centers all content)
-       Change width in CSS:  --page-width-desktop
-  ====================================================== -->
-  <div class="container">
+<header class="site-header">
+  <img src="logo.png" class="logo">
+  <div class="company-details">
+    <h1>PRABHAT COATINGS</h1>
+  </div>
+  <div></div>
+</header>
 
+<main class="container">
 
-    <!-- =====================================================
-         HEADER SECTION (Top Bar)
-         Contains company logo + page title
-         Adjust height in CSS: --header-height
-    ====================================================== -->
-    <header class="hero">
-      <div class="hero-overlay">
+  <div class="controls">
+    <input id="searchBox" type="text" placeholder="Search by code or name…">
+    <select id="typeFilter">
+      <option value="">All Types</option>
+      <option value="PP">PP</option>
+      <option value="Hybrid">Hybrid</option>
+      <option value="SD">SD</option>
+      <option value="PU">PU</option>
+      <option value="Speciality">Speciality</option>
+    </select>
+  </div>
 
-        <!-- Company Logo -->
-        <!-- Replace logo.png if needed -->
-        <img class="hero-logo" src="logo.png" alt="Company Logo">
+  <table>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Product Name</th>
+        <th>Colour</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="productTable"></tbody>
+  </table>
 
-        <!-- Page Title -->
-        <h1 class="hero-title">
-          TEST CERTIFICATE
-        </h1>
+</main>
 
-      </div>
-    </header>
+<footer class="site-footer">
+  © Prabhat Coatings — Test Certificate System
+</footer>
 
-
-
-    <!-- =====================================================
-         MAIN SECTION
-         Search bar + results box
-         Width/height controlled in CSS
-    ====================================================== -->
-    <section class="tc-section">
-
-      <!-- ===============================
-           SEARCH BAR
-           Filters while typing (JS)
-           Height controlled: --search-height
-      ================================ -->
-<input id="searchInput">
-<select id="typeFilter"></select>
-
-<table>
-  <tbody id="table-body"></tbody>
-</table>
-
-      <!-- ===============================
-           RESULTS AREA BACKGROUND BOX
-           Automatically grows with results
-           Color in CSS: --background-soft
-      ================================ -->
-      <div class="results-area">
-
-        <!-- ===============================
-             DESKTOP TABLE VIEW
-             MOBILE automatically converts
-             to card layout via CSS media queries
-        ================================ -->
-
-        <table>
-
-          <!-- ========= TABLE HEADERS (Desktop Only) ========= -->
-          <thead>
-            <tr>
-              <th>Code</th>
-              <th>Name</th>
-              <th>Colour</th>
-              <th>Download</th>
-            </tr>
-          </thead>
-
-          <!-- ========= TABLE BODY
-               JS will inject product rows here
-               ID required for JS
-          ========= -->
-          <tbody id="products-table-body"></tbody>
-
-        </table>
-
-      </div>
-
-    </section>
-
-  </div> <!-- End container -->
-
-
-  <!-- =====================================================
-       JAVASCRIPT FILE
-       Handles: loading JSON, search filter, rendering
-  ====================================================== -->
-  <script src="app.js"></script>
-
+<script src="app.js"></script>
 </body>
 </html>
