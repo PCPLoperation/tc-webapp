@@ -1,126 +1,50 @@
-/* ================================
-   TEST CERTIFICATE WEB APP LOGIC
-   ================================
-   WHAT THIS FILE DOES:
-   1️⃣ Fetches products.json
-   2️⃣ Builds table (Desktop + Mobile)
-   3️⃣ Enables live search
-   4️⃣ Enables Type filter (PP / Hybrid / Specialty / PU etc.)
-   5️⃣ Handles missing data safely
-==================================== */
+fetch("products.json")
+  .then(res => res.json())
+  .then(data => {
+    window.products = data;
+    renderTable(data);
+  })
+  .catch(() => alert("Failed to load product list"));
 
-const JSON_URL = 'products.json';   // JSON lives in repo root
-
-// DOM Elements
-const tableBody = document.getElementById("table-body");
-const searchInput = document.getElementById("searchInput");
+const tableBody = document.getElementById("productTable");
+const searchBox = document.getElementById("searchBox");
 const typeFilter = document.getElementById("typeFilter");
 
-let PRODUCTS = [];
-
-/* ================================
-   FETCH JSON
-==================================== */
-async function loadProducts() {
-  try {
-    const response = await fetch(JSON_URL);
-
-    if (!response.ok) {
-      throw new Error("JSON not found");
-    }
-
-    PRODUCTS = await response.json();
-    renderProducts(PRODUCTS);
-
-  } catch (error) {
-    console.error("Failed to load JSON", error);
-    tableBody.innerHTML = `
-      <tr>
-        <td colspan="4" style="text-align:center;color:red;">
-          Failed to load products. Please refresh.
-        </td>
-      </tr>`;
-  }
-}
-
-/* ================================
-   RENDER TABLE
-==================================== */
-function renderProducts(list) {
+function renderTable(list) {
   tableBody.innerHTML = "";
 
-  if (!list || list.length === 0) {
-    tableBody.innerHTML = `
-      <tr>
-        <td colspan="4" style="text-align:center;">
-          No records found
-        </td>
-      </tr>`;
-    return;
-  }
-
-  list.forEach(item => {
-    const code = item.code || "";
-    const name = item.name || "";
-    const colour = item.colour || "";
-    const pdf = item.pdf || "";
+  list.forEach(p => {
+    if (!p.code) return;
 
     const row = document.createElement("tr");
 
     row.innerHTML = `
-      <!-- Desktop View -->
-      <td class="desk-col">${code}</td>
-      <td class="desk-col">${name}</td>
-      <td class="desk-col">${colour}</td>
-      <td class="desk-col">
-        ${pdf ? `<a href="${pdf}" class="download-btn" download>Download</a>` : `N/A`}
-      </td>
-
-      <!-- Mobile Card View -->
-      <td class="mobile-card">
-        <div class="card-header">
-          <span class="code">${code}</span>
-          ${pdf ? `<a href="${pdf}" class="download-icon" download>⬇️</a>` : ``}
-        </div>
-
-        <div class="name">${name}</div>
-        <div class="colour">${colour}</div>
-      </td>
+      <td>${p.code}</td>
+      <td>${p.name}</td>
+      <td>${p.colour || "-"}</td>
+      <td><a class="download-btn" href="${p.pdf}" target="_blank">Download</a></td>
     `;
 
     tableBody.appendChild(row);
   });
 }
 
-/* ================================
-   FILTERING LOGIC
-==================================== */
-function filterProducts() {
-  const search = searchInput.value.toLowerCase().trim();
+function applyFilters() {
+  let filtered = window.products;
+
+  const text = searchBox.value.toLowerCase();
   const type = typeFilter.value;
 
-  const filtered = PRODUCTS.filter(item => {
-    const matchesSearch =
-      (item.code || "").toLowerCase().includes(search) ||
-      (item.name || "").toLowerCase().includes(search) ||
-      (item.colour || "").toLowerCase().includes(search);
+  filtered = filtered.filter(p =>
+    (p.code?.toLowerCase().includes(text) ||
+     p.name?.toLowerCase().includes(text))
+  );
 
-    const matchesType =
-      type === "all" || (item.type || "").toLowerCase() === type.toLowerCase();
+  if (type)
+    filtered = filtered.filter(p => p.type === type);
 
-    return matchesSearch && matchesType;
-  });
-
-  renderProducts(filtered);
+  renderTable(filtered);
 }
 
-/* ================================
-   EVENT LISTENERS
-==================================== */
-searchInput.addEventListener("input", filterProducts);
-typeFilter.addEventListener("change", filterProducts);
-
-/* ================================
-   INIT
-==================================== */
-loadProducts();
+searchBox.addEventListener("input", applyFilters);
+typeFilter.addEventListener("change", applyFilters);
