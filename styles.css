@@ -54,7 +54,7 @@ body {
 .hero {
   width: 100%;
   height: var(--header-height);
-  background: linear-gradient(90deg, #fff7e6,, #ffa300);
+  background: linear-gradient(90deg, #fff7e6, #ffa300);
   display: flex;
   align-items: center;
 }
