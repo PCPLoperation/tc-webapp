@@ -3,7 +3,7 @@
 ====================================================== */
 :root {
   /* Layout Size */
-  --page-width-desktop: 100%;
+  --page-width-desktop: 1920px;
   --page-width-mobile: 480px;
 
   /* Spacing */
