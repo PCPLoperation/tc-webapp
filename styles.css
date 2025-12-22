@@ -83,16 +83,16 @@ table {
 }
 
 th:nth-child(1),
-td:nth-child(1) { width: 20px; }   /* Code */
+td:nth-child(1) { width: 10%; }   /* Code */
 
 th:nth-child(2),
-td:nth-child(2) { width: 50%; }     /* Product Name */
+td:nth-child(2) { width:350px; }     /* Product Name */
 
 th:nth-child(3),
-td:nth-child(3) { width: 15%; }     /* Colour */
+td:nth-child(3) { width: auto; }     /* Colour */
 
 th:nth-child(4),
-td:nth-child(4) { width: 20px; }   /* Download */
+td:nth-child(4) { width: auto; }   /* Download */
 
 
 /* scroll area */
@@ -130,7 +130,8 @@ th, td {
 }
 
 .download-btn:hover {
-  background:#e39100;
+  background:#ffa300;
+  color: #ffffff;
 }
 
 /* FOOTER */
